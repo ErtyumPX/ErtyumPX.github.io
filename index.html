@@ -15,19 +15,7 @@
         <button id="share-button" type="button">Share</button>
         <div class="fb-login-button" data-width="50" data-size="small" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
         <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
-        <script>
-            window.fbAsyncInit = function() {
-              FB.init({
-                appId      : '335402648644925',
-                xfbml      : true,
-                version    : 'v14.0'
-              });
-              FB.AppEvents.logPageView();
-              FB.getLoginStatus(function (response) {
-                    console.log(response);
-              });
-            };
-          
+        <script>  
             (function(d, s, id){
                var js, fjs = d.getElementsByTagName(s)[0];
                if (d.getElementById(id)) {return;}
