@@ -19,7 +19,9 @@ window.fbAsyncInit = function() {
     FB.AppEvents.logPageView();
 
     FB.getLoginStatus(function (response) {
-        console.log(response);
+        if (response.status == 'connected'){
+            console.log(response.authResponse.userID);
+        } 
     });
 
 
