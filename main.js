@@ -1,6 +1,21 @@
 console.log("Main Initialized")
 
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '335402648644925',
+      xfbml      : true,
+      version    : 'v14.0'
+    });
 
+    FB.getLoginStatus(function (response) {
+        console.log(response);
+    });
+
+
+    FB.AppEvents.logPageView();
+
+
+  };
 
 
 document.getElementById('share-button').addEventListener('click', function () {
