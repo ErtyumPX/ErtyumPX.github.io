@@ -1,5 +1,3 @@
-console.log("Main Initialized")
-
 (function(d, s, id){
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) {return;}
@@ -7,6 +5,8 @@ console.log("Main Initialized")
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
+
+console.log("Main Initialized")
 
 window.fbAsyncInit = function() {
     FB.init({
@@ -20,7 +20,11 @@ window.fbAsyncInit = function() {
     FB.getLoginStatus(function (response) {
         console.log(response);
     });
-};
+
+
+
+
+  };
 
 
 document.getElementById('share-button').addEventListener('click', function () {
