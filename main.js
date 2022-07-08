@@ -31,7 +31,7 @@ window.fbAsyncInit = function() {
 document.getElementById('share-button').addEventListener('click', function () {
     FB.ui({
         method: 'share',
-        href: "https://tureng.com/tr/turkce-ingilizce/"
+        href: "https://en.wikipedia.org/wiki/Main_Page"
     }, function (response) {
         if (!response) {
             console.log('User did not share the page.');
