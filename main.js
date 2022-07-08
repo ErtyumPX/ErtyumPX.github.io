@@ -6,7 +6,7 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-  
+
 console.log("Main Initialized")
 
 window.fbAsyncInit = function() {
@@ -31,7 +31,7 @@ window.fbAsyncInit = function() {
 document.getElementById('share-button').addEventListener('click', function () {
     FB.ui({
         method: 'share',
-        href: "https://en.wikipedia.org/wiki/Main_Page"
+        href: "https://tureng.com/tr/turkce-ingilizce/"
     }, function (response) {
         if (!response) {
             console.log('User did not share the page.');
